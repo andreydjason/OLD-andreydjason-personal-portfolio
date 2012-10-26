@@ -1,0 +1,116 @@
+@import "bootstrap/bootstrap.less";
+
+body {
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	padding: 60px 0 0;
+}
+
+@import "bootstrap/responsive.less";
+
+
+/* ===== Primary Styles ========================================================
+	Author: Andrey Djason Viana
+	========================================================================== */
+
+
+//-------//
+// yr.no //
+//-------//
+
+#yowindow {
+	display: inline-block;
+}
+
+
+//------//
+// Main //
+//------//
+
+img {
+	background: transparent url('/img/loader.gif') no-repeat center center;
+}
+
+
+// images pre-loader
+.images-pre-loader {
+	position: absolute;
+	left: -9999999em;
+	top: -9999999em;
+	display: none;
+}
+
+// Top(Main) Nav
+.navbar .nav > li > a {
+	padding: 13px 10px 7px;
+}
+
+// Top(Main) Nav
+#topnav-additional {
+	font-size: 24px;
+}
+
+
+// Carousel (Portfolio-Gallery)
+.carousel-inner {
+	
+}
+
+.carousel {
+	.item {
+		text-align: center;
+	}
+
+  .item > img {
+  	display: inline-block;
+    height: 500px;
+    max-height: 500px;
+  }
+}
+
+.carousel-caption {
+  background: rgba(0,0,0,.80);
+	text-align: left;
+
+	a {
+		color: #0B8EDA;
+
+		&:hover {
+			color: #0BCCDA;
+		}
+	}
+}
+
+
+//--------//
+// Footer //
+//--------//
+
+footer {
+	text-align: center;
+}
+
+
+//--------//
+// Mixins //
+//--------//
+
+.bold {
+	font-weight: bold;
+}
+
+.line-through {
+	text-decoration: line-through !important;
+}
+
+.text-center {
+	text-align: center;
+}
+
+
+//--------//
+// Colors //
+//--------//
+
+.loud {
+	color: @gray;
+}

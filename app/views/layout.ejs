@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title><%= title %></title>
+
+	<meta name="author" content="Andrey Djason Viana">
+	<meta name="description" content="Andrey Djason Viana Website Portfolio - Professional WebDeveloper">
+	<meta name="keywords" content="Andrey Djason Viana Portfolio Web Developer Freelancer Worker Professional">
+
+	<meta name="viewport" content="width=device-width">
+
+	<link href="/css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+	
+	<%- messages() %>
+</head>
+<body data-spy="notscroll">
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+<div class="images-pre-loader">
+	<img src="/img/loader.gif" alt="js-loader" />
+</div>
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+
+			<a href="/" class="brand"><%= app_info.name %></a>
+
+			<div class="nav-collapse">
+				<ul id="main-nav" class="nav">
+					<li class="home"><a href="/"><i class="icon-home"></i>&nbsp;Home</a></li>
+					<li class="sobre"><a href="/sobre"><i class="icon-briefcase"></i>&nbsp;Sobre</a></li>
+					<li class="contato"><a href="#contact" class="disabled line-through"><i class="icon-envelope"></i>&nbsp;Contato</a></li>
+					<li class="blog"><a href="http://andreyviana.com/" target="_blank"><i class="icon-bullhorn"></i>&nbsp;Blog</a></li>
+				</ul>
+
+				<form class="navbar-search pull-left" action="/pesquisa">
+          <!-- <input type="text" class="search-query span2" placeholder="Pesquisar" data-content="<strong>Pesquisa</strong> em fase de implementação" data-placement="bottom"> -->
+        </form>
+
+				<ul id="topnav-additional" class="nav pull-right">
+					<li><a href="https://github.com/andreydjason" target="_blank"><i class="icon-github"></i></a></li>
+					<li><a href="http://br.linkedin.com/in/andreydjasonviana" target="_blank"><i class="icon-linkedin-sign"></i></a></li>
+					<li><a href="https://plus.google.com/u/0/111929588539462301680/" target="_blank"><i class="icon-google-plus-sign"></i></a></li>
+					<li><a href="https://twitter.com/@andreyviana" target="_blank"><i class="icon-twitter-sign"></i></a></li>
+					<li><a href="https://www.facebook.com/www.ebay.com.br" target="_blank"><i class="icon-facebook-sign"></i></a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div>
+</div><!-- /.navbar -->
+
+
+<div class="container">
+
+	<%- body %>
+
+	<hr>
+
+	<footer>
+		<p>&copy; Andrey Djason's Portfolio 2012 - Powered by <a href="http://nodejs.org/" target="_blank">Node.js</a></p>
+	</footer>
+
+</div><!-- /.container -->
+
+<script src="/js/libs/bootstrap/bootstrap.min.js"></script>
+
+<script src="/js/plugins.js"></script>
+<script src="/js/script.js"></script>
+
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+</body>
+</html>
